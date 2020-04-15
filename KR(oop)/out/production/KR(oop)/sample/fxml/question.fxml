@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QuestionController">
+    <children>
+        <AnchorPane layoutY="160.0" prefHeight="240.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="nextBut" layoutX="297.0" layoutY="171.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #F39C63;" text="Дальше" textFill="WHITE">
+                    <font>
+                        <Font name="Courier New" size="20.0" />
+                    </font>
+                </Button>
+                <CheckBox fx:id="fivePoints" layoutX="30.0" layoutY="27.0" mnemonicParsing="false" text="Полностью согласен" />
+            <CheckBox fx:id="fourPoints" layoutX="30.0" layoutY="74.0" mnemonicParsing="false" text="Скорее согласен" />
+            <CheckBox fx:id="threePoints" layoutX="30.0" layoutY="120.0" mnemonicParsing="false" text="Отчасти согласен, отчасти нет" />
+            <CheckBox fx:id="twoPoints" layoutX="393.0" layoutY="27.0" mnemonicParsing="false" text="Скорее не согласен" />
+            <CheckBox fx:id="onePoint" layoutX="393.0" layoutY="74.0" mnemonicParsing="false" text="Полностью не согласен" />
+            <CheckBox fx:id="zeroPoints" layoutX="393.0" layoutY="120.0" mnemonicParsing="false" text="Затрудняюсь ответить" />
+            </children>
+        </AnchorPane>
+      <Label fx:id="lbl1" layoutX="19.0" layoutY="43.0" prefHeight="40.0" prefWidth="662.0" textFill="WHITE">
+         <font>
+            <Font name="Ebrima" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl2" layoutX="19.0" layoutY="83.0" prefHeight="40.0" prefWidth="662.0" textFill="WHITE">
+         <font>
+            <Font name="Ebrima" size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

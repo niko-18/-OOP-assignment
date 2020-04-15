@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TableView fx:id="table" layoutX="31.0" layoutY="49.0" prefHeight="230.0" prefWidth="638.0">
+               <columns>
+                  <TableColumn fx:id="facultyColumn" prefWidth="75.0" text="Факультет" />
+                  <TableColumn fx:id="groupColumn" prefWidth="75.0" text="Группа" />
+                  <TableColumn fx:id="courseColumn" prefWidth="45.60003662109375" text="Курс" />
+                  <TableColumn fx:id="ageColumn" prefWidth="52.800048828125" text="Возраст" />
+                  <TableColumn fx:id="genderColumn" prefWidth="75.0" text="Пол" />
+                  <TableColumn fx:id="questionColumn" prefWidth="311.20000610351565" text="Вопросы">
+                     <columns>
+                        <TableColumn fx:id="questionOneColumn" prefWidth="38.4000244140625" text="1" />
+                        <TableColumn fx:id="questionTwoColumn" minWidth="0.0" prefWidth="40.0" text="2" />
+                        <TableColumn fx:id="questionThreeColumn" prefWidth="46.39996337890625" text="3" />
+                        <TableColumn fx:id="questionFourColumn" minWidth="0.0" prefWidth="44.800018310546875" text="4" />
+                        <TableColumn fx:id="questionFiveColumn" minWidth="0.0" prefWidth="45.60003662109375" text="5" />
+                        <TableColumn fx:id="questionSixColumn" prefWidth="48.800048828125" text="6" />
+                        <TableColumn fx:id="questionSevenColumn" prefWidth="48.7999267578125" text="7" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <Button fx:id="sortButton" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="138.0" style="-fx-background-color: #F39C63;" text="Сортировать" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="facultySort" layoutX="38.0" layoutY="14.0" prefHeight="27.0" prefWidth="132.0" promptText="Факультет" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextField fx:id="groupSort" layoutX="204.0" layoutY="14.0" prefHeight="27.0" prefWidth="132.0" promptText="Группа" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextField fx:id="courseSort" layoutX="367.0" layoutY="14.0" prefHeight="27.0" prefWidth="132.0" promptText="Курс" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="204.0" layoutY="29.0" text="Администратор" textFill="WHITE">
+            <font>
+                <Font name="Lucida Calligraphy Italic" size="38.0" />
+            </font>
+        </Label>
+          <Button fx:id="editQuestions" layoutX="511.0" layoutY="13.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="174.0" style="-fx-background-color: #F39C63;" text="Редактировать вопросы" textFill="WHITE">
+              <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="viewStatistics" layoutX="511.0" layoutY="59.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="174.0" style="-fx-background-color: #F39C63;" text="Посмотреть статистику" textFill="WHITE">
+              <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+              </font>
+          </Button>
+    </children>
+</AnchorPane>
